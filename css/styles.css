@@ -36,6 +36,23 @@ h3 {
     font-size: 3rem;
 }
 
+/* Links */
+a {
+    text-decoration: none;
+}
+
+.link {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+    .link {
+        font-size: 1.5rem;
+    }
+}
+
 /* Icons */
 .icon {
     width: 100px;
