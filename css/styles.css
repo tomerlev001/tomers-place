@@ -44,6 +44,24 @@ h3 {
     font-size: 3rem;
 }
 
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 1.8rem;
+    }
+
+    h1 {
+        font-size: 8rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+}
+
 /* Links */
 a {
     text-decoration: none;
@@ -79,53 +97,43 @@ a {
 }
 
 .icon-container {
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
+    width: 45px;
+    height: 45px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 
+.icon-container--round-background {
+    border-radius: 100%;
+}
+
 .icon-container--white {
-    background: #d2d0db;
+    background: #fff;
+    opacity: 0.5;
     transition: 0.3s;
 }
 
 .icon-container--white:hover {
     background: #fff;
-}
-
-
-@media screen and (min-width: 1024px) {
-    body {
-        font-size: 1.8rem;
-    }
-
-    h1 {
-        font-size: 8rem;
-    }
-
-    h2 {
-        font-size: 4rem;
-    }
-
-    h3 {
-        font-size: 2.5rem;
-    }
+    opacity: 1;
 }
 
 /* Navigation Bar */
 .nav {
-    background: var(--color-background);
+    background: var(--color-primary);
+    color: var(--color-secondary);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     padding: 1rem;
 }
 
 .nav__list {
     width: 100%;
+    max-height: 0;
+    margin: 0;
 }
 
 .nav__item {
@@ -134,12 +142,47 @@ a {
 }
 
 .nav__item > a {
-    color: var(--color-headings);
+    color: var(--color-secondary);
     transition: color 0.3s;
 }
 
 .nav__item > a:hover {
     color: #fff;
+}
+
+.nav__toggler {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: box-shadow .3s;
+}
+
+.nav.collapsible--expanded .nav__list {
+    max-height: 100vh;
+}
+
+.nav.collapsible--expanded .nav__toggler {
+    opacity: 1;
+    box-shadow: 0 0 0 7px #fff;
+    border-radius: 15%;
+}
+
+
+@media screen and (min-width: 768px) {
+    .nav__toggler {
+        display: none;
+    }
+
+    .nav__list {
+        display: flex;
+        width: auto;
+        max-height: 100%;
+        opacity: 1;
+    }
+
+    .nav__item {
+        border: 0;
+    }
+
 }
 
 /* buttons */
@@ -188,6 +231,37 @@ a {
     .grid--1x3 {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+/* Collapsibles */
+.collapsible__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapsible__heading {
+    margin-top: 0;
+}
+
+.collapsible__chevron {
+    transform: rotate(-90deg);
+    transition: transform 0.3s;
+}
+
+.collapsible__content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+    transform: rotate(0deg);
+}
+
+.collapsible--expanded .collapsible__content{
+    max-height: 100vh;
+    opacity: 1;
 }
 
 /* Cocktails */
