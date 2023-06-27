@@ -15,18 +15,165 @@
         <link rel="stylesheet" href="css/styles.css" />
     </head>
     <body>
-        <nav class="nav">
-            <a href="/"
-                ><img class="icon icon--primary" src="images/Tomers_place.png" alt=""
-            /></a>
-            <img class="icon" src="images/menu.svg" alt="" />
-            <ul class="list nav__list">
-                <li class="nav__item"><a href="#">Testing</a></li>
-                <li class="nav__item"><a href="#">Testing</a></li>
-                <li class="nav__item"><a href="#">Testing</a></li>
-                <li class="nav__item"><a href="#">Testing</a></li>
+        <nav class="nav collapsible">
+            <div class="nav__logo">
+                <a href="#"
+                    ><img
+                        class="icon icon--primary"
+                        src="images/Tomers_place.png"
+                        alt=""
+                /></a>
+            </div>
+            <span class="icon-container icon-container--white nav__toggler">
+                <img class="icon" src="images/menu.png" alt="instagram icon" />
+            </span>
+            <ul class="collapsible__content list nav__list">
+                <li class="nav__item"><a href="#">Tomer's Place</a></li>
+                <li class="nav__item"><a href="#">Cocktails</a></li>
+                <li class="nav__item"><a href="#">Gallery</a></li>
+                <li class="nav__item"><a href="#">Visit</a></li>
             </ul>
         </nav>
+
+        <section id="overview">
+            <div class="video-container">
+                <video class="video" autoplay>
+                    <source
+                        src="files/tomers-place-intro-vid.mp4"
+                        type="video/mp4"
+                    />
+                </video>
+            </div>
+        </section>
+
+        <section class="block block--dark about">
+            <div class="container">
+                <header class="block__header">
+                    <h2 class="block__heading">About Us</h2>
+                    <p class="about__text">
+                        Welcome to Tomer's Place, where creativity finds its
+                        home and inspiration meets innovation. Step into a world
+                        of exclusive content and captivating experiences,
+                        reserved only for those who appreciate the art of
+                        possibility. Discover the essence of boundless
+                        imagination, meticulously crafted for your enjoyment.
+                        Tomer's Place: Where dreams become reality.
+                    </p>
+                </header>
+            </div>
+        </section>
+
+        <div class="cocktail grid grid--1x2">
+            <div class="cocktail__container cocktail__details">
+                <h2 class="cocktail__name">Island Breeze</h2>
+                <p class="cocktail__description">
+                    Island Breeze Cocktail: A tropical paradise in a glass. Rum,
+                    pineapple, mango, lime, and a splash of soda water create a
+                    refreshing and vibrant escape. Cheers to pure relaxation!
+                </p>
+                <p class="cocktail__short_description">
+                    Refreshing * Fun * Spice
+                </p>
+            </div>
+            <div class="cocktail__container">
+                <picture>
+                    <img
+                        class="cocktail__img"
+                        src="images/cocktail_img_show.png"
+                        alt="Cocktail Icon"
+                    />
+                </picture>
+            </div>
+        </div>
+        <div class="cocktail grid grid--1x2">
+            <div class="cocktail__container cocktail__details">
+                <h2 class="cocktail__name">Island Breeze</h2>
+                <p class="cocktail__description">
+                    Island Breeze Cocktail: A tropical paradise in a glass. Rum,
+                    pineapple, mango, lime, and a splash of soda water create a
+                    refreshing and vibrant escape. Cheers to pure relaxation!
+                </p>
+                <p class="cocktail__short_description">
+                    Refreshing * Fun * Spice
+                </p>
+            </div>
+            <div class="cocktail__container">
+                <picture>
+                    <img
+                        class="cocktail__img"
+                        src="images/cocktail_img_show.png"
+                        alt="Cocktail Icon"
+                    />
+                </picture>
+            </div>
+        </div>
+
+        <section class="block block--dark visit">
+            <div class="container">
+                <header class="block__header">
+                    <h2 class="block__heading">Visit</h2>
+                    <p>You can visit us at Hahashmonaim 76, Tel-Aviv</p>
+                    <p>Quiet place near the Rotshild and Habima</p>
+                </header>
+                <div class="visit__activity">
+                    <h3>Opening hours</h3>
+                    <p>Sunday: 22:00 - 02:00</p>
+                    <p>Monday: 22:00 - 02:00</p>
+                    <p>Tuesday: 22:00 - 02:00</p>
+                    <p>Wednesday: 22:00 - 02:00</p>
+                    <p>Thursday: 22:00 - Until last customer</p>
+                    <p>Friday: 22:00 - Until last customer</p>
+                    <p>Saturday: 22:00 - 02:00</p>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.980967199072!2d34.778722976333654!3d32.06976351979227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4b78eb38d8e9%3A0xfaf0c54903fecb32!2sHaHashmonaim%20St%2076%2C%20Tel%20Aviv-Jaffa!5e0!3m2!1sen!2sil!4v1687814029504!5m2!1sen!2sil"
+                    width="100%"
+                    height="600"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+        </section>
+
+        <footer class="block block--dark footer">
+            <div class="container">
+                <div class="footer__header">
+                    <h2>Tomer's Place</h2>
+                </div>
+                <div>
+                    <ul class="list footer__content">
+                        <li class="footer__item"><a href="#">About Us</a></li>
+                        <li class="footer__item"><a href="#">Contact Us</a></li>
+                        <li class="footer__item"><a href="#">Rules</a></li>
+                        <li class="footer__item">
+                            <a href="#">Reservations</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <div
+                        class="icon-container icon-container--white icon-container--round-background"
+                    >
+                        <a
+                            href="https://www.instagram.com/tomers__place/"
+                            target="_blank"
+                        >
+                            <img
+                                class="icon"
+                                src="images/instagram-icon.png"
+                                alt="instagram icon"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <p>Copyright © Tomer's Place 2023</p>
+                </div>
+            </div>
+        </footer>
+
         <script src="js/main.js"></script>
     </body>
 </html>
