@@ -48,6 +48,10 @@ p {
     margin: 0.5rem;
 }
 
+img {
+    width: 100%;
+}
+
 @media screen and (min-width: 1024px) {
     body {
         font-size: 1.8rem;
@@ -126,8 +130,6 @@ a {
 
 /* Navigation Bar */
 .nav {
-    background: var(--color-primary);
-    color: var(--color-secondary);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -173,6 +175,10 @@ a {
 
 
 @media screen and (min-width: 768px) {
+    .nav {
+        justify-content: center;
+    }
+
     .nav__toggler {
         display: none;
     }
@@ -268,15 +274,10 @@ a {
     opacity: 1;
 }
 
+
 /* Cocktails */
 .cocktail {
     gap: 3rem 1rem;
-}
-
-.cocktail__container {
-    width: 400px;
-    height: 400px;
-    padding: 1rem;
 }
 
 .cocktail__details {
@@ -285,12 +286,9 @@ a {
 
 .cocktail__short_description {
     font-size: 1.2rem;
+    margin: 1.5rem;
 }
 
-.cocktail__img {
-    height: 100%;
-    width: 100%;
-}
 
 /* Footer */
 .footer {
