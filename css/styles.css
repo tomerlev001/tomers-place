@@ -302,6 +302,7 @@ a {
 
 .cocktail__details {
     text-align: center;
+    margin: auto 0;
 }
 
 .cocktail__description {
@@ -394,9 +395,7 @@ a {
 } 
 
 .about__header {
-    text-shadow: 2px 2xp 5px #fff;
-    /* margin: 3rem; */
-    /* background: url(/images/bar-background-01.jpg); */
+    text-shadow: 2px 2xp 15px #fff;
 }
 
 .about__img {
@@ -442,6 +441,7 @@ a {
 .block--dark h3 {
     color: #fff;
 } 
+
 
 /* Cocktails Block */
 .cocktails-block__header {
