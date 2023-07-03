@@ -5,32 +5,25 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/styles.css" />
     </head>
     <body>
-        <section class="block block--dark">
-            <div class="grid grid--1x2 container cocktail">
-                <div class="cocktail__details">
-                    <h2 class="cocktail__name">Island Breeze</h2>
-                    <p class="cocktail__description">
-                        Island Breeze Cocktail: A tropical paradise in a glass.
-                        Rum, pineapple, mango, lime, and a splash of soda water
-                        create a refreshing and vibrant escape. Cheers to pure
-                        relaxation!
-                    </p>
-                    <p class="cocktail__short_description">
-                        Refreshing * Fun * Spice
-                    </p>
-                </div>
-                <picture>
-                    <img
-                        src="images/cocktail_img_show.png"
-                        alt="Cocktail Icon"
-                    />
-                </picture>
+
+        <section id="intro">
+            <div>
+                <video class="intro__video" autoplay loop>
+                    <source src="files/Intro_02.mp4" type="video/mp4"/>
+                </video>
             </div>
         </section>
+
         <script src="js/main.js"></script>
     </body>
 </html>

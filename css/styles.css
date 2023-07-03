@@ -22,14 +22,20 @@ html {
 }
 
 body {
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    /* font-family: 'Dancing Script', cursive, 'Inter', sans-serif; */
+    /* font-family: 'Inter', sans-serif; */
+    /* font-family: 'Inter', Arial, Helvetica, sans-serif; */
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 2rem;
     line-height: 1.5;
+    background: var(--color-primary);
     color: var(--color-secondary);
+
 }
 
 h1, h2, h3 {
     margin: 1rem;
+    font-family: 'Dancing Script', cursive, 'Inter', sans-serif;
 }
 
 h1 {
@@ -52,6 +58,11 @@ img {
     width: 100%;
 }
 
+.menu-font {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
 @media screen and (min-width: 1024px) {
     body {
         font-size: 1.8rem;
@@ -214,15 +225,23 @@ a {
     color: #fff;
 }
 
-/* Vidoes */
-.video {
-    height: 100%;
-    width: 100%;
+/* Intro */
+.intro__video {
+    width: 100vw;
+    height: 600px;
+    object-fit: cover;
 }
 
-.video-container {
-    height: 700px;
-    width: 100%;
+@media screen and (min-width: 768px){
+    .intro__video {
+        height: 700px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .intro__video {
+        height: 800px;
+    }
 }
 
 
@@ -277,11 +296,13 @@ a {
 
 /* Cocktails */
 .cocktail {
-    gap: 3rem 1rem;
+    gap: 3rem 3rem;
 }
 
 .cocktail__details {
     text-align: center;
+    padding: 1rem;
+    margin: auto;
 }
 
 .cocktail__short_description {
@@ -289,11 +310,21 @@ a {
     margin: 1.5rem;
 }
 
+.cocktail__img {
+    height: 400px;
+    object-fit: cover; 
+    border-radius: 50px;
+}
+
 
 /* Footer */
 .footer {
     text-align: center;
     padding: 1rem;
+}
+
+.footer__header {
+    margin-bottom: 4rem;
 }
 
 .footer__content {
@@ -317,13 +348,14 @@ a {
 
 .footer__social {
     border-top: 1px solid #fff;
-    padding-top: 1.5rem;
+    padding-top: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .footer__copyright {
+    margin-top: 2.5rem;
     font-size: 1rem;
 }
 
@@ -341,18 +373,25 @@ a {
 
 
 /* About */
-/* .about {
-
-}
+.about {
+    height: 1400px;
+    text-align: center;
+    background: url(/images/front-view-empty-cocktail-glass-dark-background-color-wine-alcohol-celebration-holiday-restaurant.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    text-shadow: 0px 0px 5px black;
+} 
 
 .about__header {
-    margin: 3rem;
+    text-shadow: 2px 2xp 5px #fff;
+    /* margin: 3rem; */
+    /* background: url(/images/bar-background-01.jpg); */
 }
 
-.about__text {
-    margin-top: 5rem;
-    opacity: 0.7;
-} */
+.about__img {
+    object-fit: fill;
+}
 
 
 /* Visit */
@@ -364,9 +403,10 @@ a {
     margin: 4rem;
 }
 
+
 /* Blocks */
 .block {
-    padding: 6rem 2rem;
+    padding: 8rem 2rem;
 }
 
 .block__header {
@@ -380,6 +420,11 @@ a {
 
 .block--dark {
     background: #000;
+}
+
+.block--white {
+    background: #fff;
+    color: var(--color-primary);
 }
 
 .block--dark h1, 
