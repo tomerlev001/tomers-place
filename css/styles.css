@@ -297,23 +297,33 @@ a {
 /* Cocktails */
 .cocktail {
     gap: 3rem 3rem;
+    margin: 10rem auto;
 }
 
 .cocktail__details {
     text-align: center;
-    padding: 1rem;
-    margin: auto;
+}
+
+.cocktail__description {
+    margin: 2.5rem 0;
 }
 
 .cocktail__short_description {
-    font-size: 1.2rem;
-    margin: 1.5rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: 2.5rem;
+}
+
+.cocktail__image-container {
+    display: flex;
+    align-items: center;
 }
 
 .cocktail__img {
     height: 400px;
     object-fit: cover; 
     border-radius: 50px;
+    box-shadow: 0px 0px 10px 5px black;
 }
 
 
@@ -400,7 +410,7 @@ a {
 }
 
 .visit__activity {
-    margin: 4rem;
+    margin: 6rem auto;
 }
 
 
@@ -432,3 +442,18 @@ a {
 .block--dark h3 {
     color: #fff;
 } 
+
+/* Cocktails Block */
+.cocktails-block__header {
+    margin: 5rem 10rem;
+    /* height: 300px;
+    width: 300px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cocktails-block__img {
+    height: 150px;
+    width: 150px;
+}
