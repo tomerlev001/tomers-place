@@ -13,6 +13,7 @@
         />
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <header>
@@ -53,7 +54,7 @@
 
         <section class="block about">
             <div class="container">
-                <header class="block__header">
+                <header class="block__header" data-aos="zoom-in-up">
                     <h2 class="block__heading">About Us</h2>
                     <p class="about__text">
                         Welcome to Tomer's Place, where creativity finds its
@@ -79,7 +80,7 @@
                 </header>
 
                 <div class="grid grid--1x2 cocktail">
-                    <div class="cocktail__details">
+                    <div class="cocktail__details" data-aos="fade-right">
                         <h2 class="cocktail__name">Cosmopolitan</h2>
                         <p class="cocktail__description">
                             The Cosmopolitan is a stylish and vibrant cocktail
@@ -94,7 +95,7 @@
                             Elegant - Vibrant - Balanced
                         </p>
                     </div>
-                    <picture class="cocktail__img">
+                    <picture class="cocktail__img" data-aos="fade-left">
                         <img
                             class="cocktail__img"
                             src="images/cocktails/cosmopolitan-cocktail-decorated-with-slice-lemon.png"
@@ -102,7 +103,7 @@
                         />
                     </picture>
                 </div>
-                <div class="grid grid--1x2 cocktail">
+                <div class="grid grid--1x2 cocktail" data-aos="fade-up">
                     <div class="cocktail__details">
                         <h2 class="cocktail__name">Blue Margarita</h2>
                         <p class="cocktail__description">
@@ -124,7 +125,7 @@
                         />
                     </picture>
                 </div>
-                <div class="grid grid--1x2 cocktail">
+                <div class="grid grid--1x2 cocktail" data-aos="fade-up">
                     <div class="cocktail__details">
                         <h2 class="cocktail__name">Island Breeze</h2>
                         <p class="cocktail__description">
@@ -145,7 +146,7 @@
                         />
                     </picture>
                 </div>
-                <div class="grid grid--1x2 cocktail">
+                <div class="grid grid--1x2 cocktail" data-aos="fade-up">
                     <div class="cocktail__details">
                         <h2 class="cocktail__name">Kamikaze</h2>
                         <p class="cocktail__description">
@@ -172,12 +173,12 @@
 
         <section class="block block--dark visit">
             <div class="container">
-                <header class="block__header">
+                <header class="block__header" data-aos="zoom-in-up">
                     <h2 class="block__heading">Visit</h2>
                     <p>You can visit us at Hahashmonaim 76, Tel-Aviv</p>
                     <p>Quiet place near the Rotshild and Habima</p>
                 </header>
-                <div class="visit__activity">
+                <div class="visit__activity" data-aos="zoom-in-up">
                     <h3>Opening hours</h3>
                     <p>Sunday: 22:00 - 02:00</p>
                     <p>Monday: 22:00 - 02:00</p>
@@ -242,5 +243,9 @@
         </footer>
 
         <script src="js/main.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>
